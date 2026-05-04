@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/geist";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Geist Variable", system-ui, sans-serif;
+  background: #08111f;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.24), transparent 30rem),
+    radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.24), transparent 28rem),
+    radial-gradient(circle at 50% 90%, rgba(16, 185, 129, 0.18), transparent 32rem),
+    linear-gradient(135deg, #08111f 0%, #101827 45%, #111827 100%);
+  color: #e5eefc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
